@@ -1,12 +1,13 @@
 from dotenv.main import load_dotenv
 import os
+import streamlit as st
 from langchain.llms import OpenAI
 from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 from langchain.chains import SimpleSequentialChain
 from langchain.chains import SequentialChain
 
-load_dotenv()
+os.environ["OPENAI_API_KEY"] = st.secrets["secret_key"]
 
 llm = OpenAI(temperature=0.6)
 
