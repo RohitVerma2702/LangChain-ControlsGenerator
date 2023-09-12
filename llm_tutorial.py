@@ -7,6 +7,8 @@ from langchain.chains import LLMChain
 from langchain.chains import SimpleSequentialChain
 from langchain.chains import SequentialChain
 
+# load_dotenv()
+
 os.environ["OPENAI_API_KEY"] = st.secrets["secret_key"]
 
 llm = OpenAI(temperature=0.6)

@@ -2,6 +2,14 @@ import streamlit as st
 import llm_tutorial
 import streamlit.components.v1 as components
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+
 st.title("Controls Generator")
 
 with st.sidebar:
