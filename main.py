@@ -4,9 +4,9 @@ import streamlit.components.v1 as components
 
 hide_streamlit_style = """
             <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            .embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
+                #MainMenu {visibility: hidden;}
+                footer {visibility: hidden;}
+                .embeddedAppMetaInfoBar_container__DxxL1 {visibility: hidden;}
             </style>
             """
 st.markdown(hide_streamlit_style, unsafe_allow_html=True)
